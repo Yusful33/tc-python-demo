@@ -1,0 +1,5 @@
+psycopg2==2.9.9
+pytest==8.2.1
+testcontainers==4.5.0
+psycopg==3.1.19
+logger==1.4
