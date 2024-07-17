@@ -1,8 +1,5 @@
 services:
   app:
-    entrypoint:
-    - sleep
-    - infinity
     image: docker/dev-environments-default:stable-1
     init: true
     volumes:
