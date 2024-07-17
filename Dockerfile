@@ -17,4 +17,4 @@ RUN apt-get update && \
     apt-get install -y docker.io
 
 # Default command to run pytest
-CMD ["pytest", "tests/test_customers.py"]
+CMD ["python", "customers.py"]
