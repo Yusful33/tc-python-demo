@@ -16,5 +16,4 @@ RUN python -m ensurepip --upgrade && \
 RUN apt-get update && \
     apt-get install -y docker.io
 
-# Default command to run pytest
-CMD ["python", "customers.py"]
+CMD ["python", "customers/customers.py"]
