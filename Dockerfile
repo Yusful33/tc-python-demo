@@ -16,8 +16,5 @@ RUN python -m ensurepip --upgrade && \
 RUN apt-get update && \
     apt-get install -y docker.io
 
-# Make sure Docker is running
-RUN service docker start
-
 # Default command to run pytest
 CMD ["pytest", "tests/test_customers.py"]
