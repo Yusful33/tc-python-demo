@@ -2,6 +2,7 @@
 import os
 import pytest
 import logging
+import psycopg
 from testcontainers.postgres import PostgresContainer
 
 # Import the Customer class from the correct module
