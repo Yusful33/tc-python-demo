@@ -15,5 +15,3 @@ RUN python -m ensurepip --upgrade && \
 # Install Docker CLI to use Testcontainers
 RUN apt-get update && \
     apt-get install -y docker.io
-
-CMD ["python", "customers/customers.py"]
