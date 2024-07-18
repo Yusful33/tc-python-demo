@@ -1,0 +1,7 @@
+services:
+  python:
+    build: 
+      context: ./
+      target: dev
+    ports:
+      - 8000:5000
