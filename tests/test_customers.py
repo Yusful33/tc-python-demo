@@ -61,3 +61,8 @@ def test_get_customer_by_email():
     customer = Customer.get_customer_by_email("john@gmail.com")
     assert customer.name == "John"
     assert customer.email == "john@gmail.com"
+
+def test_get_customer_by_name():
+    Customer.create_customer("Yusuf", "yusuf@gmail.com")
+    customer = Customer.get_customer_by_name("Yusuf")
+    assert customer.name == "Joe"

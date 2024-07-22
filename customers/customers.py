@@ -44,7 +44,15 @@ class Customer:
                 cur.execute("SELECT id, name, email FROM customers WHERE email = %s", (email,))
                 (cid, name, email) = cur.fetchone()
                 return Customer(cid, name, email)
-
+            
+    @classmethod
+    def get_customer_by_name(cls, name) -> 'Customer':
+        with get_connection() as conn:
+            with conn.cursor() as cur:
+                cur.execute("SELECT id, name, email FROM customers WHERE name = %s", (name,))
+                (cid, name, email) = cur.fetchone()
+                return Customer(cid, name, email)
+            
     @classmethod
     def delete_all_customers(cls):
         with get_connection() as conn:
